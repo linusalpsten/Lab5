@@ -33,7 +33,7 @@ namespace Lab_5___Nisses_stugby
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             SqlConnection sqlConn = new SqlConnection();
-            sqlConn.ConnectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = master; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            sqlConn.ConnectionString = @"Data Source=iths.database.windows.net;Initial Catalog=Group2;Persist Security Info=True;User ID=Group2sa;Password=***********";
             sqlConn.Open();
             SqlCommand cmd = new SqlCommand("INSERT INTO People(Name, Phone, Email)values('" + nameBox.Text + "','" + phonenumberBox.Text + "','" + emailBox.Text + "')", sqlConn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
