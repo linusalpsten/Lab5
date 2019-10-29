@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_5___Nisses_stugby"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Topmost="False"
+        WindowState="Normal" >
+    <Grid RenderTransformOrigin="0.497,0.463"/>
 </Window>
