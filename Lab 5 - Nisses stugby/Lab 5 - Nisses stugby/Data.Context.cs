@@ -19,6 +19,7 @@ namespace Lab_5___Nisses_stugby
         }
 
         public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Cabin> Cabins { get; set; }
 
     }
 }
