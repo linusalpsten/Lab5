@@ -24,33 +24,18 @@ namespace Lab_5___Nisses_stugby
     public partial class Registration : Page
     {
         Labb5Entities dataEntities = new Labb5Entities();
-        
+
         public Registration()
         {
             InitializeComponent();
         }
-        
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection();
-            sqlConn.ConnectionString = @"Data Source=iths.database.windows.net;Initial Catalog=Group2;Persist Security Info=True;User ID=Group2sa;Password=***********";
-            sqlConn.Open();
-            SqlCommand cmd = new SqlCommand("INSERT INTO People(Name, Phone, Email)values('" + nameBox.Text + "','" + phonenumberBox.Text + "','" + emailBox.Text + "')", sqlConn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
+            string sqlCommand = $"INSERT INTO People( Name, Phone, Email)values('{nameBox.Text}','{phonenumberBox.Text}','{emailBox.Text}')";
+            dataEntities.Database.ExecuteSqlCommand(sqlCommand);
+            dataEntities.SaveChanges();
             MessageBox.Show("Kund uppdaterad!");
-            sqlConn.Close();
         }
     }
 }
-
-//SqlCommand cmd = new SqlCommand("Select Name, Phone, Email from People where Id=@Id",sqlConn);
-//cmd.Parameters.AddWithValue("@Id")
-//SqlDataReader reader = cmd.ExecuteReader();
-//while(reader.Read())
-//{
-//    nameBox.Text = reader.GetValue(0).ToString();
-//    //phonenumberBox.Items.Add(reader["phonenumber"].ToString());
-//    //emailBox.Items.Add(reader["name"].ToString());
-//}
