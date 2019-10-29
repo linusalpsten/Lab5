@@ -24,25 +24,18 @@ namespace Lab_5___Nisses_stugby
     public partial class Registration : Page
     {
         Labb5Entities dataEntities = new Labb5Entities();
-        
+
         public Registration()
         {
             InitializeComponent();
         }
-        
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection();
-            sqlConn.ConnectionString = @"Data Source=iths.database.windows.net;Initial Catalog=Group2;Persist Security Info=True;User ID=Group2sa;Password= Group2Password!";
-            sqlConn.Open();
-            string query = "Select Max(Trans_No) from Auto_Number";
-            SqlCommand cmd = new SqlCommand("INSERT INTO People( Name, Phone, Email)values('" + nameBox.Text + "','" + phonenumberBox.Text + "','" + emailBox.Text + "')", sqlConn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
+            string sqlCommand = $"INSERT INTO People( Name, Phone, Email)values('{nameBox.Text}','{phonenumberBox.Text}','{emailBox.Text}')";
+            dataEntities.Database.ExecuteSqlCommand(sqlCommand);
+            dataEntities.SaveChanges();
             MessageBox.Show("Kund uppdaterad!");
-            
-            sqlConn.Close();
         }
     }
 }
