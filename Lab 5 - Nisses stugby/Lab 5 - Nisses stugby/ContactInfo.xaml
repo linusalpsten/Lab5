@@ -9,6 +9,25 @@
       Title="ContactInfo">
 
     <Grid>
-        
+        <Label x:Name="kontakt" Content="Kontaktuppgifter" HorizontalAlignment="Center" Margin="294,72,158,0" VerticalAlignment="Top" Width="348" FontSize="18" FontWeight="Bold"></Label>
+        <Label x:Name="adress" Content="Adress" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="telefon" Content="Telefonnummer" HorizontalAlignment="Left" Margin="50,210,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="kontaktperson" Content="Kontaktperson" HorizontalAlignment="Left" Margin="50,260,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="email" Content="E-mail" HorizontalAlignment="Left" Margin="50,310,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="adressuppgift" Content="Skyttegatan 40" HorizontalAlignment="Left" Margin="210,150,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="postuppgift" Content="983 41 GÄLLIVARE" HorizontalAlignment="Left" Margin="210,170,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="telefonnummer" Content="0737143246" HorizontalAlignment="Left" Margin="210,210,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label x:Name="namn" Content="Nisse Nissesson" HorizontalAlignment="Left" Margin="210, 260,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label  HorizontalAlignment="Left" Margin="210,310,0,0" VerticalAlignment="Top" Width="268">
+            <Hyperlink Click="Hyperlink_Click" >
+                <TextBlock x:Name="mailurl" Text="nisse@nissesstugby.se"/>
+            </Hyperlink>
+        </Label>
+        <Button x:Name="Home" Content="Hem" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnHome_click"/>
+        <Button x:Name="Registration" Content="Registrera" HorizontalAlignment="Left" Margin="214,30,0,0" VerticalAlignment="Top" Width="75" Click="Registration_Click"/>
+        <Button x:Name="Search" Content="Sök stuga" HorizontalAlignment="Left" Margin="360,30,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
+        <Button x:Name="Weather" Content="Väder" HorizontalAlignment="Left" Margin="510,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image x:Name="map1_png" Margin="360,131,43,29" Source="map1.png" Stretch="Fill"/>
+        <Button x:Name="Admin" Content="Admin" HorizontalAlignment="Left" Margin="664,30,0,0" VerticalAlignment="Top" Width="75" Click="Admin_Click"/>
     </Grid>
 </Page>
