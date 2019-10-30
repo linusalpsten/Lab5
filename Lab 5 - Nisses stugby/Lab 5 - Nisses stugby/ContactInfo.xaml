@@ -27,7 +27,7 @@
         <Button x:Name="Registration" Content="Registrera" HorizontalAlignment="Left" Margin="214,30,0,0" VerticalAlignment="Top" Width="75" Click="Registration_Click"/>
         <Button x:Name="Search" Content="Sök stuga" HorizontalAlignment="Left" Margin="360,30,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
         <Button x:Name="Weather" Content="Väder" HorizontalAlignment="Left" Margin="510,30,0,0" VerticalAlignment="Top" Width="75"/>
-        <Image x:Name="map1_png" Margin="360,131,43,29" Source="map1.png" Stretch="Fill"/>
+        <Image x:Name="map1_png" Margin="360,131,43,29" Source="Resources\map1.png" Stretch="Fill"/>
         <Button x:Name="Admin" Content="Admin" HorizontalAlignment="Left" Margin="664,30,0,0" VerticalAlignment="Top" Width="75" Click="Admin_Click"/>
     </Grid>
 </Page>

@@ -24,30 +24,28 @@ namespace Lab_5___Nisses_stugby
         {
             InitializeComponent();
         }
-       
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-
+            Registration registration = new Registration();
+            this.NavigationService.Navigate(registration);
         }
 
         private void CabinsSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            CabinSearch cabinSearch = new CabinSearch();
+            this.NavigationService.Navigate(cabinSearch);
         }
 
         private void Adminstrat_Click(object sender, RoutedEventArgs e)
         {
-
+            Administration administration = new Administration();
+            this.NavigationService.Navigate(administration);
         }
 
         private void ContactInfo_Click(object sender, RoutedEventArgs e)
         {
-
+            ContactInfo contactInfo = new ContactInfo();
+            this.NavigationService.Navigate(contactInfo);
         }
 
         private void Weather_Click(object sender, RoutedEventArgs e)

@@ -8,31 +8,60 @@
       Title="Home" Height="634.286">
 
     <Grid>
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="181"/>
-            <RowDefinition Height="64"/>
-            <RowDefinition Height="64"/>
-            <RowDefinition Height="64"/>
-            <RowDefinition Height="64"/>
-            <RowDefinition Height="64"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="330"/>
+            <RowDefinition Height="40"/>
+            <!--<RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="534"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="634"/>
             <ColumnDefinition Width="206"/>
         </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="1">
+
+            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40"/>
+
+        </Border>
+        
+        <Border Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
+         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+                
+                <Button x:Name = "CabinsSearch" FontSize="17" Content = "Söka stugor" Click = "CabinsSearch_Click" 
+         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+                <Button x:Name = "Adminstrat" FontSize="17" Content = "Adminstration" Click = "Adminstrat_Click" 
+         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+                <Button x:Name = "ContactInfo" FontSize="17" Content = "KontaktInformation" Click = "ContactInfo_Click" 
+         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+                <Button x:Name = "Weather" FontSize="17" Content = "Väder" Click = "Weather_Click" 
+         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+            </StackPanel>
+           
+        </Border>
         <Border Grid.Row="1" Grid.Column="1">
-            <Label Content="Välkommen till Nisses stugby" FontStyle="Oblique" FontSize="40"/>
+            <Image x:Name="home_png" Source="Resources\homePage_image.png" Stretch="Fill"/>
+            
         </Border>
 
-        <Border Grid.Row="2" Grid.Column="0">
+        <!--<Border Grid.Row="2" Grid.Column="0">
             <Button x:Name = "Registration" Content = "Medlemskap" Click = "Registration_Click" 
          Width = "150" Height = "30" HorizontalAlignment = "Center" />
         </Border>
 
         <Border Grid.Row="3" Grid.Column="0">
-            <Button x:Name = "CabinsSearch" Content = "Söka stugorna" Click = "CabinsSearch_Click" 
+            <Button x:Name = "CabinsSearch" Content = "Söka stugor" Click = "CabinsSearch_Click" 
          Width = "150" Height = "30" HorizontalAlignment = "Center" />
         </Border>
 
@@ -42,14 +71,14 @@
         </Border>
 
         <Border Grid.Row="5" Grid.Column="0">
-            <Button x:Name = "ContactInfo" Content = "Contact Information" Click = "ContactInfo_Click" 
+            <Button x:Name = "ContactInfo" Content = "ContaktInformation" Click = "ContactInfo_Click" 
          Width = "150" Height = "30" HorizontalAlignment = "Center" />
         </Border>
 
         <Border Grid.Row="6" Grid.Column="0">
-            <Button x:Name = "Weather" Content = "Weather" Click = "Weather_Click" 
+            <Button x:Name = "Weather" Content = "Väder" Click = "Weather_Click" 
          Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>
+        </Border>-->
 
     </Grid>
     <!--<Grid x:Name="GridLayout">

@@ -182,7 +182,7 @@
       <DependentUpon>Data.edmx</DependentUpon>
       <LastGenOutput>Data.cs</LastGenOutput>
     </Content>
-    <Resource Include="map1.png" />
+    <Resource Include="Resources\homePage_image.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -215,6 +215,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\map1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
