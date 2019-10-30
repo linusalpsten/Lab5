@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlTypes;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Lab_5___Nisses_stugby
 {
@@ -20,9 +23,19 @@ namespace Lab_5___Nisses_stugby
     /// </summary>
     public partial class Registration : Page
     {
+        Labb5Entities dataEntities = new Labb5Entities();
+
         public Registration()
         {
             InitializeComponent();
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            string sqlCommand = $"INSERT INTO People( Name, Phone, Email)values('{nameBox.Text}','{phonenumberBox.Text}','{emailBox.Text}')";
+            dataEntities.Database.ExecuteSqlCommand(sqlCommand);
+            dataEntities.SaveChanges();
+            MessageBox.Show("Kund uppdaterad!");
         }
     }
 }

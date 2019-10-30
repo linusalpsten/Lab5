@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Outlook = Microsoft.Office.Interop.Outlook;
+
 
 namespace Lab_5___Nisses_stugby
 {
@@ -24,5 +17,68 @@ namespace Lab_5___Nisses_stugby
         {
             InitializeComponent();
         }
+
+        //private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        //{
+        //    SendTestMail(mailurl.Text);
+        //}
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            SendTestMail(mailurl.Text);
+        }
+
+
+
+
+        public void SendTestMail(string EmailUrl)
+        {
+            try
+            {
+
+                Outlook.Application oApp = new Outlook.Application();
+                Outlook._MailItem oMailItem = (Outlook._MailItem)oApp.CreateItem(Outlook.OlItemType.olMailItem);
+                oMailItem.To = EmailUrl;
+                // body, bcc etc...
+                oMailItem.Display(true);
+
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine("{0} Exception caught: ", e);
+            }
+        }
+
+        private void BtnHome_click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.NavigationService.Navigate(home);
+        }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+            Registration registration = new Registration();
+            this.NavigationService.Navigate(registration);
+        }
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            CabinSearch cabinSearch = new CabinSearch();
+            this.NavigationService.Navigate(cabinSearch);
+        }
+
+        private void Admin_Click(object sender, RoutedEventArgs e)
+        {
+            Administration administration = new Administration();
+            this.NavigationService.Navigate(administration);
+        }
     }
 }
+
+
+
+//Outlook.Application oApp = new Outlook.Application();
+//Outlook._MailItem oMailItem = (Outlook._MailItem)oApp.CreateItem(Outlook.OlItemType.olMailItem);
+//oMailItem.To = EmailUrl;
+//                // body, bcc etc...
+//                oMailItem.Display(true);

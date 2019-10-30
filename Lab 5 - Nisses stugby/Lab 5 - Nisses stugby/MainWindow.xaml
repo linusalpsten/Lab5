@@ -5,5 +5,5 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_5___Nisses_stugby"
         mc:Ignorable="d"
-        Title="MainWindow" Height="540" Width="860" Source="Home.xaml">
+        Title="MainWindow" Height="540" Width="860" Source="ContactInfo.xaml">
 </NavigationWindow>
