@@ -4,12 +4,69 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Lab_5___Nisses_stugby"
-      mc:Ignorable="d" 
-      d:DesignHeight="540" d:DesignWidth="860"
-      Title="Home">
+      mc:Ignorable="d" d:DesignWidth="960"
+      Title="Home" Height="634.286">
 
     <Grid>
-        <Label Content="Välkommen till Nisses stugby" HorizontalAlignment="Left" Margin="65,87,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="181"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="64"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="534"/>
+            <ColumnDefinition Width="206"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="1" Grid.Column="1">
+            <Label Content="Välkommen till Nisses stugby" FontStyle="Oblique" FontSize="40"/>
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="0">
+            <Button x:Name = "Registration" Content = "Medlemskap" Click = "Registration_Click" 
+         Width = "150" Height = "30" HorizontalAlignment = "Center" />
+        </Border>
+
+        <Border Grid.Row="3" Grid.Column="0">
+            <Button x:Name = "CabinsSearch" Content = "Söka stugorna" Click = "CabinsSearch_Click" 
+         Width = "150" Height = "30" HorizontalAlignment = "Center" />
+        </Border>
+
+        <Border Grid.Row="4" Grid.Column="0">
+            <Button x:Name = "Adminstrat" Content = "Adminstration" Click = "Adminstrat_Click" 
+         Width = "150" Height = "30" HorizontalAlignment = "Center" />
+        </Border>
+
+        <Border Grid.Row="5" Grid.Column="0">
+            <Button x:Name = "ContactInfo" Content = "Contact Information" Click = "ContactInfo_Click" 
+         Width = "150" Height = "30" HorizontalAlignment = "Center" />
+        </Border>
+
+        <Border Grid.Row="6" Grid.Column="0">
+            <Button x:Name = "Weather" Content = "Weather" Click = "Weather_Click" 
+         Width = "150" Height = "30" HorizontalAlignment = "Center" />
+        </Border>
 
     </Grid>
+    <!--<Grid x:Name="GridLayout">
+        <Grid.Resources>
+
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="0" Grid.Column="0">
+            <TextBox />
+        </Border>
+
+    </Grid>-->
 </Page>

@@ -24,5 +24,35 @@ namespace Lab_5___Nisses_stugby
         {
             InitializeComponent();
         }
+       
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CabinsSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Adminstrat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ContactInfo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Weather_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
