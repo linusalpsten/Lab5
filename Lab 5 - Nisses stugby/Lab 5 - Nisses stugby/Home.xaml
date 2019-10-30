@@ -34,17 +34,17 @@
                 <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
          Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                
-                <Button x:Name = "CabinsSearch" FontSize="17" Content = "Söka stugor" Click = "CabinsSearch_Click" 
+
+                <Button x:Name = "CabinsSearch" FontSize="17" Content = "Söka stugor" Click = "Search_Click" 
          Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "Adminstrat" FontSize="17" Content = "Adminstration" Click = "Adminstrat_Click" 
+                <Button x:Name = "Adminstrat" FontSize="17" Content = "Adminstration" Click = "Admin_Click" 
          Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "ContactInfo" FontSize="17" Content = "KontaktInformation" Click = "ContactInfo_Click" 
+                <Button x:Name = "ContactInfo" FontSize="17" Content = "KontaktInformation" Click = "Contact_Click" 
          Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "Weather" FontSize="17" Content = "Väder" Click = "Weather_Click" 
+                <Button x:Name = "Weather" FontSize="17" Content = "Väder" Click ="Weather_Click"
          Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
             </StackPanel>
