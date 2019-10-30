@@ -72,6 +72,12 @@ namespace Lab_5___Nisses_stugby
             Administration administration = new Administration();
             this.NavigationService.Navigate(administration);
         }
+
+        private void Contact_Click(object sender, RoutedEventArgs e)
+        {
+            ContactInfo contactinfo = new ContactInfo();
+            this.NavigationService.Navigate(contactinfo);
+        }
     }
 }
 
