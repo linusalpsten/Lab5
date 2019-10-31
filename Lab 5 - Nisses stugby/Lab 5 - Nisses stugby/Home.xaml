@@ -8,7 +8,7 @@
       Title="Home" Height="634.286">
 
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
             <RowDefinition Height="330"/>
@@ -19,40 +19,47 @@
             <RowDefinition Height="40"/>-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400"/>
-            <ColumnDefinition Width="634"/>
+            <ColumnDefinition Width="314"/>
+            <ColumnDefinition Width="720"/>
             <ColumnDefinition Width="206"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Row="0" Grid.Column="1">
+        <Border Grid.Row="0" RenderTransformOrigin="0.5,0.5" Margin="241,0,20,0" Grid.ColumnSpan="2">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.022"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
 
-            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40"/>
+            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" Margin="-11,60,187,10"/>
 
         </Border>
-        
-        <Border Grid.Row="1" Grid.Column="0">
-            <StackPanel>
-                <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
-         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
-            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
 
+        <Border Grid.Row="1" Grid.Column="0">
+            <StackPanel Margin="10,7,43,3">
+                <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
+         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
                 <Button x:Name = "CabinsSearch" FontSize="17" Content = "Söka stuga" Click = "Search_Click" 
-         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
-            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
+         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="48,4" HorizontalAlignment = "Center" />
                 <Button x:Name = "Adminstrat" FontSize="17" Content = "Adminstration" Click = "Admin_Click" 
-         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "ContactInfo" FontSize="17" Content = "KontaktInformation" Click = "Contact_Click" 
-         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+                <Button x:Name = "ContactInfo" FontSize="17" Content = "Kontaktinformation" Click = "Contact_Click" 
+         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
                 <Button x:Name = "Weather" FontSize="17" Content = "Väder" Click ="Weather_Click"
-         Width = "165" Height = "60" Background="Orange" FontStyle="Italic" 
+         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
             </StackPanel>
-           
+
         </Border>
-        <Border Grid.Row="1" Grid.Column="1">
-            <Image x:Name="home_png" Source="Resources\homePage_image.png" Stretch="Fill"/>
-            
+        <Border Grid.Row="1" Margin="275,0,109,0" Grid.ColumnSpan="2">
+            <Image x:Name="home_png" Source="Resources\homePage_image.png" Stretch="Fill" Margin="10,22,258,47"/>
+
         </Border>
 
         <!--<Border Grid.Row="2" Grid.Column="0">
@@ -81,5 +88,5 @@
         </Border>-->
 
     </Grid>
-   
+
 </Page>
