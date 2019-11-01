@@ -20,6 +20,8 @@ namespace Lab_5___Nisses_stugby
     /// </summary>
     public partial class CabinSearch : Page
     {
+
+       
         public CabinSearch()
         {
             InitializeComponent();
@@ -61,6 +63,16 @@ namespace Lab_5___Nisses_stugby
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
         {
 
         }
