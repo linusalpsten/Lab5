@@ -1,4 +1,6 @@
-﻿<Page x:Class="Lab_5___Nisses_stugby.CabinSearch"
+﻿
+    
+    <Page x:Class="Lab_5___Nisses_stugby.CabinSearch"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,13 +11,35 @@
       Title="CabinSearch">
 
     <Grid>
-        <Button x:Name="Home" Content="Hem" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnHome_click"/>
-        <Button x:Name="Registration" Content="Registrera" HorizontalAlignment="Left" Margin="199,30,0,0" VerticalAlignment="Top" Width="75" Click="Registration_Click"/>
-        <Button x:Name="Search" Content="Sök stuga" HorizontalAlignment="Left" Margin="323,30,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
-        <Button x:Name="Contact" Content="Kontaktinfo" HorizontalAlignment="Left" Margin="447,30,0,0" VerticalAlignment="Top" Width="75" Click="Contact_Click"/>
-        <Button x:Name="Weather" Content="Väder" HorizontalAlignment="Left" Margin="571,30,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Admin" Content="Admin" HorizontalAlignment="Left" Margin="695,30,0,0" VerticalAlignment="Top" Width="75" Click="Admin_Click"/>
-    
-        
+        <Button x:Name="Home1" Content="Hem" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnHome_click"/>
+        <Button x:Name="Registration1" Content="Registrera" HorizontalAlignment="Left" Margin="199,30,0,0" VerticalAlignment="Top" Width="75" Click="Registration_Click"/>
+        <Button x:Name="Search1" Content="Sök stuga" HorizontalAlignment="Left" Margin="323,30,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
+        <Button x:Name="Contact1" Content="Kontaktinfo" HorizontalAlignment="Left" Margin="447,30,0,0" VerticalAlignment="Top" Width="75" Click="Contact_Click"/>
+        <Button x:Name="Weather1" Content="Väder" HorizontalAlignment="Left" Margin="571,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Admin1" Content="Admin" HorizontalAlignment="Left" Margin="695,30,0,0" VerticalAlignment="Top" Width="75" Click="Admin_Click"/>
+        <Label Content="Sök" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" HorizontalAlignment="Left" Margin="384,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="90" Height="69">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.588"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Här kan du söka efter en stuga" HorizontalAlignment="Left" Height="32" Margin="333,138,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="349,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="349,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="115,178,0,0" VerticalAlignment="Top" Width="204"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="349,312,0,0" VerticalAlignment="Top" Width="148"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="349,354,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="24" Margin="115,224,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Ange minsta storlek i siffror (m2)" HorizontalAlignment="Left" Height="24" Margin="115,253,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label Content="WIFI" HorizontalAlignment="Left" Margin="115,312,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Kök" HorizontalAlignment="Left" Margin="115,354,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button Content="Sök" HorizontalAlignment="Left" Height="43" Margin="349,397,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click"/>
+
+
     </Grid>
+    
 </Page>

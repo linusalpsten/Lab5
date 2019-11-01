@@ -54,5 +54,15 @@ namespace Lab_5___Nisses_stugby
             ContactInfo contactinfo = new ContactInfo();
             this.NavigationService.Navigate(contactinfo);
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
