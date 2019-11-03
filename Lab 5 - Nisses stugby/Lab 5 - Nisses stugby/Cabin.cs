@@ -16,5 +16,11 @@ namespace Lab_5___Nisses_stugby
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int ID { get; set; }
+        public Nullable<int> NumOfBeds { get; set; }
+        public Nullable<int> NumOfRooms { get; set; }
+        public Nullable<int> Size { get; set; }
+        public string WIFI { get; set; }
+        public string Kitchen { get; set; }
     }
 }
