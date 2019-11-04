@@ -38,10 +38,10 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Här kan du söka efter en stuga" HorizontalAlignment="Left" Height="32" Margin="333,138,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Sök efter en stuga här" HorizontalAlignment="Left" Height="32" Margin="333,138,0,0" VerticalAlignment="Top" Width="179"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="349,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
         <TextBox HorizontalAlignment="Left" Height="24" Margin="349,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="115,178,0,0" VerticalAlignment="Top" Width="204"/>
+        <Label Content="Hur många sängplatser behöver ni?" HorizontalAlignment="Left" Height="24" Margin="115,178,0,0" VerticalAlignment="Top" Width="204"/>
         <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="496,183,0,0" VerticalAlignment="Top" Width="26"/>
         <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="496,225,0,0" VerticalAlignment="Top" Width="26"/>
         <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="24" Margin="115,224,0,0" VerticalAlignment="Top" Width="159"/>
