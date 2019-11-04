@@ -9,12 +9,25 @@
       Title="CabinSearch">
 
     <Grid>
-        <Button x:Name="Home1" Content="Hem" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" Width="75" Click="BtnHome_click"/>
-        <Button x:Name="Registration1" Content="Registrera" HorizontalAlignment="Left" Margin="199,30,0,0" VerticalAlignment="Top" Width="75" Click="Registration_Click"/>
-        <Button x:Name="Search1" Content="Sök stuga" HorizontalAlignment="Left" Margin="323,30,0,0" VerticalAlignment="Top" Width="75" Click="Search_Click"/>
-        <Button x:Name="Contact1" Content="Kontaktinfo" HorizontalAlignment="Left" Margin="447,30,0,0" VerticalAlignment="Top" Width="75" Click="Contact_Click"/>
-        <Button x:Name="Weather1" Content="Väder" HorizontalAlignment="Left" Margin="571,30,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Admin1" Content="Admin" HorizontalAlignment="Left" Margin="695,30,0,0" VerticalAlignment="Top" Width="75" Click="Admin_Click"/>
+        <Button x:Name = "Home" FontSize="17" Content = "Hem" Click="BtnHome_click" 
+         Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="47,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
+
+        <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
+         Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="202,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
+
+        <Button x:Name = "Search" FontSize="17" Content = "Sök stuga" Click="Search_Click"
+         Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="357,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
+
+        <Button x:Name = "Contact" FontSize="17" Content = "Kontakt" Click="Contact_Click"
+         Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="512,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
+
+        <Button x:Name = "Admin" FontSize="17" Content = "Admin" Click="Admin_Click"
+         Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
+            Padding="8,4" Margin="667,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
         <Label Content="Sök" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" HorizontalAlignment="Left" Margin="384,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="90" Height="69">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -47,8 +60,6 @@
         <Button Content="Sök" HorizontalAlignment="Left" Height="43" Margin="599,197,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click"/>
         <DataGrid Name ="datagrid1" HorizontalAlignment="Left" Height="88" Margin="132,321,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="True" />
         <Label Content="Sökresultat" FontSize="20" HorizontalAlignment="Left" Margin="373,279,0,0" VerticalAlignment="Top" Width="114"/>
-
-
     </Grid>
 
 </Page>

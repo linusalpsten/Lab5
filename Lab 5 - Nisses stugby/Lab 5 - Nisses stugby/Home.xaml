@@ -23,7 +23,7 @@
             <ColumnDefinition Width="720"/>
             <ColumnDefinition Width="206"/>
         </Grid.ColumnDefinitions>
-        <Border Grid.Row="0" RenderTransformOrigin="0.5,0.5" Margin="241,0,20,0" Grid.ColumnSpan="2">
+        <Border Grid.Row="0" RenderTransformOrigin="0.5,0.5" Margin="241,-34,20,34" Grid.ColumnSpan="2">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -33,11 +33,11 @@
                 </TransformGroup>
             </Border.RenderTransform>
 
-            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" Margin="-11,60,187,10"/>
+            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" Margin="-143,60,319,10"/>
 
         </Border>
 
-        <Border Grid.Row="1" Grid.Column="0">
+        <Border Grid.Column="0" Margin="0,117,0,34" Grid.RowSpan="2">
             <StackPanel Margin="10,7,43,3">
                 <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
@@ -57,7 +57,7 @@
             </StackPanel>
 
         </Border>
-        <Border Grid.Row="1" Margin="275,0,109,0" Grid.ColumnSpan="2">
+        <Border Margin="275,117,109,34" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <Image x:Name="home_png" Source="Resources\homePage_image.png" Stretch="Fill" Margin="10,22,258,47"/>
 
         </Border>
