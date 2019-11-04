@@ -28,26 +28,16 @@
         <Button x:Name = "Admin" FontSize="17" Content = "Admin" Click="Admin_Click"
          Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="667,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
-        <Label Content="Sök" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" HorizontalAlignment="Left" Margin="384,81,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="90" Height="69">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.588"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Här kan du söka efter en stuga" HorizontalAlignment="Left" Height="32" Margin="333,138,0,0" VerticalAlignment="Top" Width="179"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="349,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="349,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="115,178,0,0" VerticalAlignment="Top" Width="204"/>
-        <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="496,183,0,0" VerticalAlignment="Top" Width="26"/>
-        <CheckBox Content="" HorizontalAlignment="Left" Height="23" Margin="496,225,0,0" VerticalAlignment="Top" Width="26"/>
-        <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="24" Margin="115,224,0,0" VerticalAlignment="Top" Width="159"/>
-        <Label Content="Ange minsta storlek i siffror (m2)" HorizontalAlignment="Left" Height="24" Margin="115,253,0,0" VerticalAlignment="Top" Width="229"/>
-        <Label Content="WIFI" HorizontalAlignment="Left" Margin="431,179,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label Content="Kök" HorizontalAlignment="Left" Margin="431,221,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Här kan du söka efter en stuga" HorizontalAlignment="Left" Height="32" Margin="334,104,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="BedAmount" HorizontalAlignment="Left" Height="24" Margin="350,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <TextBox x:Name="CabinSize" HorizontalAlignment="Left" Height="24" Margin="350,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="116,144,0,0" VerticalAlignment="Top" Width="204"/>
+        <CheckBox x:Name="WifiCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,149,0,0" VerticalAlignment="Top" Width="26"/>
+        <CheckBox x:Name="KitchenCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,191,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="24" Margin="116,190,0,0" VerticalAlignment="Top" Width="159"/>
+        <Label Content="Ange minsta storlek i siffror (m2)" HorizontalAlignment="Left" Height="24" Margin="116,219,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label Content="WIFI" HorizontalAlignment="Left" Margin="432,145,0,0" VerticalAlignment="Top" Width="40"/>
+        <Label Content="Kök" HorizontalAlignment="Left" Margin="432,187,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -57,9 +47,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button Content="Sök" HorizontalAlignment="Left" Height="43" Margin="599,197,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click"/>
-        <DataGrid Name ="datagrid1" HorizontalAlignment="Left" Height="88" Margin="132,321,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="True" />
-        <Label Content="Sökresultat" FontSize="20" HorizontalAlignment="Left" Margin="373,279,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button Content="Sök" HorizontalAlignment="Left" Height="43" Margin="600,163,0,0" VerticalAlignment="Top" Width="148" Click="Button_Click"/>
+        <DataGrid Name ="datagrid1" HorizontalAlignment="Left" Height="160" Margin="133,287,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="True" />
+        <Label Content="Sökresultat" FontSize="20" HorizontalAlignment="Left" Margin="374,245,0,0" VerticalAlignment="Top" Width="114"/>
     </Grid>
 
 </Page>

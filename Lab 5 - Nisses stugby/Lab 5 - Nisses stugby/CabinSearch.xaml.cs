@@ -27,6 +27,18 @@ namespace Lab_5___Nisses_stugby
         public CabinSearch()
         {
             InitializeComponent();
+            var query = from cabin in datagrid.Cabins
+                        orderby cabin.Name
+                        select new
+                        {
+                            Namn = cabin.Name,
+                            Bäddar = cabin.NumOfBeds,
+                            Rum = cabin.NumOfRooms,
+                            Storlek = cabin.Size,
+                            Wifi = cabin.WIFI,
+                            Kök = cabin.Kitchen
+                        };
+            datagrid1.ItemsSource = query.ToList();
         }
 
         private void BtnHome_click(object sender, RoutedEventArgs e)
@@ -61,8 +73,16 @@ namespace Lab_5___Nisses_stugby
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            bool wifi = (bool)WifiCheckbox.IsChecked;
+            bool kitchen = (bool)KitchenCheckbox.IsChecked;
+            int beds = 0;
+            int.TryParse(BedAmount.Text, out beds);
+            int size = 0;
+            int.TryParse(CabinSize.Text, out size);
+
             var query = from cabin in datagrid.Cabins
                         orderby cabin.Name
+                        where cabin.NumOfBeds >= beds && cabin.Size >= size
                         select new
                         {
                             Namn = cabin.Name,
@@ -72,9 +92,16 @@ namespace Lab_5___Nisses_stugby
                             Wifi = cabin.WIFI,
                             Kök = cabin.Kitchen
                         };
-            datagrid1.ItemsSource = query.ToList();
 
-            
+            if (wifi)
+            {
+                query = query.Where(c => c.Wifi == "Yes");
+            }
+            if (kitchen)
+            {
+                query = query.Where(c => c.Kök == "Yes");
+            }
+            datagrid1.ItemsSource = query.ToList();
         }
     }
 }
