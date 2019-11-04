@@ -14,7 +14,6 @@ namespace Lab_5___Nisses_stugby
     
     public partial class Cabin
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public int ID { get; set; }
         public Nullable<int> NumOfBeds { get; set; }
