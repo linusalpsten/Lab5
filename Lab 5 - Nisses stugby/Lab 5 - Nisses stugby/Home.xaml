@@ -42,7 +42,7 @@
                 <Button x:Name = "Registration" FontSize="17" Content = "Medlemskap" Click = "Registration_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "CabinsSearch" FontSize="17" Content = "Söka stuga" Click = "Search_Click" 
+                <Button x:Name = "CabinsSearch" FontSize="17" Content = "Sök stuga" Click = "Search_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="48,4" HorizontalAlignment = "Center" />
                 <Button x:Name = "Adminstrat" FontSize="17" Content = "Adminstration" Click = "Admin_Click" 
