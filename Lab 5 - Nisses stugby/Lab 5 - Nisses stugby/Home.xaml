@@ -51,9 +51,6 @@
                 <Button x:Name = "ContactInfo" FontSize="17" Content = "Kontaktinformation" Click = "Contact_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
-                <Button x:Name = "Weather" FontSize="17" Content = "Väder" Click ="Weather_Click"
-         Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
-            Padding="8,4" Margin="4" HorizontalAlignment = "Center" />
             </StackPanel>
 
         </Border>
@@ -61,31 +58,6 @@
             <Image x:Name="home_png" Source="Resources\homePage_image.png" Stretch="Fill" Margin="10,22,258,47"/>
 
         </Border>
-
-        <!--<Border Grid.Row="2" Grid.Column="0">
-            <Button x:Name = "Registration" Content = "Medlemskap" Click = "Registration_Click" 
-         Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>
-
-        <Border Grid.Row="3" Grid.Column="0">
-            <Button x:Name = "CabinsSearch" Content = "Söka stugor" Click = "CabinsSearch_Click" 
-         Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>
-
-        <Border Grid.Row="4" Grid.Column="0">
-            <Button x:Name = "Adminstrat" Content = "Adminstration" Click = "Adminstrat_Click" 
-         Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>
-
-        <Border Grid.Row="5" Grid.Column="0">
-            <Button x:Name = "ContactInfo" Content = "ContaktInformation" Click = "ContactInfo_Click" 
-         Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>
-
-        <Border Grid.Row="6" Grid.Column="0">
-            <Button x:Name = "Weather" Content = "Väder" Click = "Weather_Click" 
-         Width = "150" Height = "30" HorizontalAlignment = "Center" />
-        </Border>-->
 
     </Grid>
 
