@@ -59,11 +59,6 @@ namespace Lab_5___Nisses_stugby
             this.NavigationService.Navigate(contactinfo);
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var query = from cabin in datagrid.Cabins
@@ -80,16 +75,6 @@ namespace Lab_5___Nisses_stugby
             datagrid1.ItemsSource = query.ToList();
 
             
-        }   
-
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
