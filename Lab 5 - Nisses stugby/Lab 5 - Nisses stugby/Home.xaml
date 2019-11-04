@@ -34,7 +34,7 @@
         </StackPanel>
 
         <Border Grid.Row = "2">
-            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" Margin="116,-84,69,392"/>
+            <Label Content="Välkommen till Nisses stugby" Foreground="DarkBlue" FontStyle="Oblique" FontSize="40" Margin="116,-87,69,395"/>
 
         </Border>
 
