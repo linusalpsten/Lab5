@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace Lab_5___Nisses_stugby
 {
     /// <summary>
@@ -20,8 +22,8 @@ namespace Lab_5___Nisses_stugby
     /// </summary>
     public partial class CabinSearch : Page
     {
+        Group2Entities1 datagrid = new Group2Entities1();
 
-       
         public CabinSearch()
         {
             InitializeComponent();
@@ -64,8 +66,21 @@ namespace Lab_5___Nisses_stugby
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var query = from cabin in datagrid.Cabins
+                        orderby cabin.Name
+                        select new
+                        {
+                            Namn = cabin.Name,
+                            Bäddar = cabin.NumOfBeds,
+                            Rum = cabin.NumOfRooms,
+                            Storlek = cabin.Size,
+                            Wifi = cabin.WIFI,
+                            Kök = cabin.Kitchen
+                        };
+            datagrid1.ItemsSource = query.ToList();
+
             
-        }
+        }   
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {

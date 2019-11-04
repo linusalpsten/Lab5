@@ -71,11 +71,32 @@
     <Compile Include="Administration.xaml.cs">
       <DependentUpon>Administration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cabins.cs">
+      <DependentUpon>Labb5Cabins.tt</DependentUpon>
+    </Compile>
     <Compile Include="CabinSearch.xaml.cs">
       <DependentUpon>CabinSearch.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContactInfo.xaml.cs">
       <DependentUpon>ContactInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labb5Cabins.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labb5Cabins.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labb5Cabins.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labb5Cabins.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Labb5Cabins.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labb5Cabins.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="People.cs">
+      <DependentUpon>Labb5Cabins.tt</DependentUpon>
     </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
@@ -162,6 +183,13 @@
     <None Include="Data.edmx.diagram">
       <DependentUpon>Data.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="Labb5Cabins.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Labb5Cabins.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Labb5Cabins.edmx.diagram">
+      <DependentUpon>Labb5Cabins.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,6 +209,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Data.edmx</DependentUpon>
       <LastGenOutput>Data.cs</LastGenOutput>
+    </Content>
+    <Content Include="Labb5Cabins.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Labb5Cabins.edmx</DependentUpon>
+      <LastGenOutput>Labb5Cabins.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Labb5Cabins.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Labb5Cabins.edmx</DependentUpon>
+      <LastGenOutput>Labb5Cabins.cs</LastGenOutput>
     </Content>
     <Resource Include="Resources\homePage_image.png" />
   </ItemGroup>
