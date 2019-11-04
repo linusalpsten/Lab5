@@ -21,13 +21,13 @@
             <Button x:Name = "Registration" FontSize="15" Content = "Medlemskap" Click = "Registration_Click" 
          Width = "165" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4,45" HorizontalAlignment = "Center" />
-            <Button x:Name = "CabinsSearch" FontSize="15" Content = "Söka stuga" Click = "Search_Click" 
+            <Button x:Name = "CabinsSearch" FontSize="15" Content = "Sök stuga" Click = "Search_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4,45" HorizontalAlignment = "Center" />
-            <Button x:Name = "Adminstrat" FontSize="15" Content = "Adminstration" Click = "Admin_Click" 
+            <Button x:Name = "Adminstrat" FontSize="15" Content = "Admin" Click = "Admin_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4,45" HorizontalAlignment = "Center" />
-            <Button x:Name = "ContactInfo" FontSize="15" Content = "Kontaktinformation" Click = "Contact_Click" 
+            <Button x:Name = "ContactInfo" FontSize="15" Content = "Kontakt" Click = "Contact_Click" 
          Width = "165" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="4,45" HorizontalAlignment = "Center" />
 

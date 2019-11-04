@@ -54,10 +54,5 @@ namespace Lab_5___Nisses_stugby
             ContactInfo contactinfo = new ContactInfo();
             this.NavigationService.Navigate(contactinfo);
         }
-
-        private void Weather_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
