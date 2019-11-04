@@ -22,7 +22,7 @@ namespace Lab_5___Nisses_stugby
     /// </summary>
     public partial class CabinSearch : Page
     {
-        Group2Entities1 datagrid = new Group2Entities1();
+        Labb5Entities datagrid = new Labb5Entities();
 
         public CabinSearch()
         {
