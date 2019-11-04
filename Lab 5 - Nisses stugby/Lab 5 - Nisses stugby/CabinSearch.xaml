@@ -29,15 +29,15 @@
          Width = "150" Height = "50" Background="Orange" FontStyle="Italic" 
             Padding="8,4" Margin="667,30,0,0" HorizontalAlignment = "Left" VerticalAlignment="Top" />
         <Label Content="Här kan du söka efter en stuga" HorizontalAlignment="Left" Height="32" Margin="334,104,0,0" VerticalAlignment="Top" Width="179"/>
-        <TextBox x:Name="BedAmount" HorizontalAlignment="Left" Height="24" Margin="350,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <TextBox x:Name="CabinSize" HorizontalAlignment="Left" Height="24" Margin="350,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="116,144,0,0" VerticalAlignment="Top" Width="204"/>
-        <CheckBox x:Name="WifiCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,149,0,0" VerticalAlignment="Top" Width="26"/>
-        <CheckBox x:Name="KitchenCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,191,0,0" VerticalAlignment="Top" Width="26"/>
-        <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="24" Margin="116,190,0,0" VerticalAlignment="Top" Width="159"/>
-        <Label Content="Ange minsta storlek i siffror (m2)" HorizontalAlignment="Left" Height="24" Margin="116,219,0,0" VerticalAlignment="Top" Width="229"/>
-        <Label Content="WIFI" HorizontalAlignment="Left" Margin="432,145,0,0" VerticalAlignment="Top" Width="40"/>
-        <Label Content="Kök" HorizontalAlignment="Left" Margin="432,187,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="BedAmount" HorizontalAlignment="Left" Height="24" Margin="350,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <TextBox x:Name="CabinSize" HorizontalAlignment="Left" Height="24" Margin="350,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.367,2.583"/>
+        <Label Content="Hur många sängplatser behöver du?" HorizontalAlignment="Left" Height="24" Margin="116,149,0,0" VerticalAlignment="Top" Width="204"/>
+        <CheckBox x:Name="WifiCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,155,0,0" VerticalAlignment="Top" Width="26"/>
+        <CheckBox x:Name="KitchenCheckbox" Content="" HorizontalAlignment="Left" Height="23" Margin="497,197,0,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.346,1.087"/>
+        <Label Content="Hur stor stuga behöver ni? " HorizontalAlignment="Left" Height="27" Margin="116,191,0,0" VerticalAlignment="Top" Width="159"/>
+        <Label Content="Ange minsta storlek i siffror (m2)" HorizontalAlignment="Left" Height="27" Margin="116,219,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label Content="WIFI" HorizontalAlignment="Left" Margin="432,149,0,0" VerticalAlignment="Top" Width="40"/>
+        <Label Content="Kök" HorizontalAlignment="Left" Margin="432,191,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
